@@ -8,6 +8,7 @@ namespace Expense_Tracker.Models
         [Key]
         public int CategoryId { get; set; }
         [Column(TypeName = "nvarchar(50)")]
+        [Required(ErrorMessage = "Title is requied.")]
         public string Title { get; set; }
         [Column(TypeName = "nvarchar(5)")]
         public string Icon { get; set; } = "";
